@@ -6,10 +6,13 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
+  "sideEffects": ["*.css"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch --format esm,cjs --dts",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
