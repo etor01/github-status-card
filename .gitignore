@@ -9,3 +9,6 @@ example/
 
 #gitignore
 #.gitignore
+
+#production
+dist/
