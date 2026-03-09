@@ -86,12 +86,14 @@ the colored indicator reflects the computed avalability state
 
 ```bash
 npm install github-status-card
+#installation using node package manager
 ```
 
-or 
+or
 
 ```bash
 yarn add github-status-card
+#installation using yarn
 ```
 
 ---
@@ -105,11 +107,11 @@ export default function App() {
   return (
     //add it to your app like this, replace the username/github repos with your own
     <StatusCard
-      username="torname"
+      username="tornam"
       repos={[
-        "torname/portfolio",
-        "torname/api",
-        "torname/recipe-app"
+        "tornam/portfolio",
+        "tornam/api",
+        "tornam/recipe-app"
       ]}
     />
   );
@@ -219,7 +221,7 @@ Example;
 
 ## Security Note
 
-Avoid exposing private GitHub tokens in client-side code. Place your tokens in your `.env` files and ensure you dont push it to github either.
+Avoid exposing private GitHub tokens in client-side code. **Place your tokens in your `.env` files and ensure you dont push it to github either**.
 
 ---
 
