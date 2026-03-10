@@ -6,7 +6,7 @@ The package works by querying the GitHub API for commits authored by a specific 
 
 ---
 
-# Overview
+## Overview
 
 Many developers want a simple way to communicate their current **availability or focus level** without manually updating a status message.
 
@@ -21,12 +21,12 @@ The result is a dynamic activity badge that updates based on the developer's cod
 
 ---
 
-# Status Logic
+## Status Logic
 
 The status is derived from the number of commits authored by the user during the current day.
 
 | Commits Today | Status | Meaning |
-|---|---|---|
+|--- | --- | --- |
 | 0 – 5 | Available | Developer likely has capacity to respond |
 | 6 – 19 | Late to Reply | Developer is actively working |
 | 20+ | Not Available | Developer is in deep work mode |
@@ -35,7 +35,7 @@ These thresholds will be configurable in future versions.
 
 ---
 
-# Example
+## Example
 
 ```tsx
 import { StatusCard } from "github-status-card";
@@ -121,7 +121,7 @@ export default function App() {
 ## Props
 
 | Prop | Type | Required | Description |
-|--- | --- | --- | --- |
+| --- | --- | --- | --- |
 | username | string | **yes** | GitHub username whose commits will be tracked |
 | repos | string [ ] | **yes** | List of repositories in owner/repo format |
 | token | string | no | GitHub personal access token |
@@ -132,7 +132,7 @@ export default function App() {
 
 ## Repository Format
 
-`Repositories must be provided using the format: `
+`Repositories must be provided using the format:`
 
 ```bash
 owner/repository 
@@ -246,9 +246,10 @@ GitHub contribution data may take time to appear.
 Recent commits may not immediately appear in activity results.
 
 ---
+
 ### Development
 
-This is an Open Source project, you can clone and modify it for your own need. 
+This is an Open Source project, you can clone and modify it for your own need.
 How to clone the repository;
 
 ```bash
