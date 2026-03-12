@@ -26,7 +26,7 @@ The result is a dynamic activity badge that updates based on the developer's cod
 The status is derived from the number of commits authored by the user during the current day.
 
 | Commits Today | Status | Meaning |
-|--- | --- | --- |
+| --- | --- | --- |
 | 0 – 5 | Available | Developer likely has capacity to respond |
 | 6 – 19 | Late to Reply | Developer is actively working |
 | 20+ | Not Available | Developer is in deep work mode |
