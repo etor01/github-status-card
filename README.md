@@ -312,3 +312,5 @@ MIT License
 GitHub Status Card provides a simple automated way to communicate developer availability based on GitHub activity.
 
 Instead of manually updating status messages, the card derives a presence indicator directly from commit activity and exposes it through a clean embeddable UI component
+
+created by etornam kordzo ahiataku
